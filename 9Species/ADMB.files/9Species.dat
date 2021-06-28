@@ -7,63 +7,64 @@
 # Trophic 
  1 
 
-# nsp 
+# nsp (number of species)
  9 
 
-# nFIC 
+# nFIC (number of Fishery Independent Catch surveys)
  2 
 
-# o 
+# o (Tiny number for calculation of lognormal distributions)
  0.001 
 
-# p 
+# p (Tiny number for calculation of multinomial residuals)
  1e-30 
 
-# Nint 
+# Nint (Number of species interactions)
  27 
 
-# Binsize 
+# Binsize (Number of size bins)
  5 
 
-# EcoB.mil.kg 
+# EcoB.mil.kg (Total ecosystem biomass)
  15000 
 
-# Owt 
+# Owt (Weight for other food penalty term, Open)
  10 
 
-# Fyr 
+# Fyr (First year of data in model by species)
  1978 1978 1978 1978 1978 1978 1978 1978 1978 
 
-# Lyr 
+# Lyr (Last year of data in model by species)
  2007 2007 2007 2007 2007 2007 2007 2007 2007 
 
-# FHfyr 
+# FHfyr (Food habit first year)
  1978 
 
-# FHlyr 
+# FHlyr (Food habit last year)
  2007 
 
-# Nage 
+# Nage (Maximum age by species)
  31 21 10 10 10 9 7 6 6 
 
-# Mnseg 
+# Mnseg (Number of segments of different natural mortality (M1) rates)
  1 
 
-# Nseg 
+# Nseg (Number of segments for the FIC data; for each segment, a separate q is estimated)
  1 1 1 1 1 1 1 1 1 
 
-# agePR 
+# agePR (Age at partial recruitment)
  13 1 1 1 1 1 1 1 2 
 
-# ageFR 
+# ageFR (Age at full recruitment)
  15 4 7 4 6 8 3 3 3 
 
-# ficFR 
+# ficFR (Age of recruitment to fishery survey)
  4 4 6 3 2 6 4 2 2 
 
-# FICs_lage 
+# FICs_lage (Survey selectivity for the last age class; 1 = species becomes fully recruited to the survey)
  1 1 1 1 1 1 1 1 1 
 
+# Set estimation phases
 # aAge1ph 
  -1 -1 1 1 1 1 1 1 1 
 
@@ -85,43 +86,44 @@
 # Yr1ph 
  -1 -1 1 1 1 1 1 1 1 
 
-# Pred 
+# Pred (Predator species in each interaction)
  4 4 4 4 4 8 8 8 3 3 3 3 7 7 7 7 6 6 6 1 1 1 1 1 2 2 2 
 
-# Prey 
+# Prey (Prey species in each interaction)
  4 8 9 5 7 8 9 5 4 8 9 5 7 8 9 5 5 8 9 8 9 5 4 3 8 9 5 
 
-# Rhoph 
+# Rhoph (Is Rho estimable for the interaction; 1=yes)
  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
 # M1yr 
  1978 
 
-# TCwt 
+# TCwt (Total annual commercial catch in weight by species)
  150 150 400 150 100 150 350 250 75 
 
-# CPwt 
+# CPwt (Commercial catch proportions at age)
  35 0 75 50 10 15 30 50 10 
 
-# Bwt 
+# Bwt, Ywt, Rwt are Penalty Terms
+# Bwt (Weight for Biomass Penalty Term, Bpen)
  1e+15 1e+15 1e+15 1e+15 1e+15 1e+15 1e+15 1e+15 1e+15 
 
-# Ywt 
+# Ywt (Weight for Yr1 Penalty Term, Ypen)
  500 10 0 1e-12 15 7 0 1e-15 5.5e-05 
 
-# Rwt 
+# Rwt (Weight for Recruitment Penalty Term, Rpen)
  100 100 100 0 100 100 100 100 1e+06 
 
-# FHwt 
+# FHwt (Food habits proportions by weight by species)
  35 45 10 15 10 10 10 10 10 
 
-# Bthres 
+# Bthres (Biomass threshold used in the penalty function to avoid B == 0, which would cause M2 calc to crash)
  1e-07 1e-07 1e-07 1e-07 1e-07 1e-07 1e-07 1e-07 1e-07 
 
-# Rthres 
+# Rthres (Threshold for the coefficient of variation of recruitment)
  1 1 1 1 1 1 1 0.7 0.4 
 
-# TSwt 
+# TSwt (Total annual survey catch in number/tow, by species, by survey)
 50 150
 350 350
 100 50
@@ -132,7 +134,7 @@
 0 100
 100 0
 
-# SPwt 
+# SPwt (Survey catch proportions-at-age, by species, by survey)
 50 50
 125 125
 50 50
@@ -143,10 +145,10 @@
 0 50
 50 0
 
-# iM2 
+# iM2 (M2 estimates (from previous model run) to use in non-FH years)
  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 
-# Eta 
+# Eta (Preferred predator/prey weight ratio)
 0 0 3.67342 3.67342 3.67342 0 0 3.67342 3.67342
 0 0 0 0 6.74571 0 0 6.74571 6.74571
 0 0 0 2.71921 2.71921 0 0 2.71921 2.71921
@@ -157,7 +159,7 @@
 0 0 0 0 2.1 0 0 2.1 2.1
 0 0 0 0 0 0 0 0 0
 
-# Sigma1 
+# Sigma1 (Variance in predator/prey weight ratios < eta)
 -99 -99 1.02087 1.02087 1.02087 -99 -99 1.02087 1.02087
 -99 -99 -99 -99 1.33454 -99 -99 1.33454 1.33454
 -99 -99 -99 0.877321 0.877321 -99 -99 0.877321 0.877321
@@ -168,7 +170,7 @@
 -99 -99 -99 -99 0.519764 -99 -99 0.519764 0.519764
 -99 -99 -99 -99 -99 -99 -99 -99 -99
 
-# Sigma2 
+# Sigma2 (Variance in predator/prey weight ratios > eta)
 -99 -99 3.13697 3.13697 3.13697 -99 -99 3.13697 3.13697
 -99 -99 -99 -99 1.28648 -99 -99 1.28648 1.28648
 -99 -99 -99 2.24128 2.24128 -99 -99 2.24128 2.24128
@@ -179,7 +181,7 @@
 -99 -99 -99 -99 2.30409 -99 -99 2.30409 2.30409
 -99 -99 -99 -99 -99 -99 -99 -99 -99
 
-# fic_fage 
+# fic_fage (First age captured for each trawl survey, by species, by survey)
 1 1
 1 1
 1 1
@@ -190,7 +192,7 @@
 1 1
 1 1
 
-# fic_lage 
+# fic_lage (Last age captured for each trawl survey, by species, by survey)
 31 31
 21 21
 10 10
@@ -201,7 +203,7 @@
 6 6
 6 6
 
-# FICmonth 
+# FICmonth (Month of each trawl survey, by species, by survey)
 4 10
 4 10
 4 10
@@ -212,9 +214,10 @@
 10 10
 4 10
 
-# FICyr 
+# FICyr (Beginning year of FIC segments for species where nseg > 1; if nseg == 1, FICyr = 0)
  0 0 0 0 0 0 0 0 0 
 
+# Total commercial catch; in metric tons, by species, year
 # TotC.tmt.SDog 
  1.86845 2.37896 2.47242 2.43733 2.514 2.42283 2.32016 2.08535 1.91405 1.84432 1.96969 2.09918 3.70041 2.8513 4.54627 4.4345 3.73964 4.4639 4.95859 2.61607 2.90911 2.37229 1.60289 1.1246 1.02346 0.67061 0.874218 0.833537 0.947349 1.14013 
 
@@ -242,6 +245,7 @@
 # TotC.tmt.Her 
  0.003 0.01 0.332 0.043 0.001 0.003 0.01 0.162 0.003 0.012 0.009 0.004 0.111 0.677 0.01 0.135 0.266 0 4.723 7.095 28.686 7.07 15.596 48.371 19.645 23.495 18.194 16.672 16.769 10.271 
 
+# Average individual weight-at-age; in kg, by species, year, age
 # WeightAtAge.kg.SDog 
 0.070307 0.15242 0.264694 0.401479 0.556169 0.7223 0.894119 1.06683 1.23664 1.40068 1.55691 1.704 1.84116 1.96803 2.0846 2.19109 2.28791 2.37557 2.45466 2.52579 2.58959 2.64669 2.6977 2.74318 2.78366 2.81967 2.85164 2.88 2.90515 2.92742 2.98817
 0.070307 0.15242 0.264694 0.401479 0.556169 0.7223 0.894119 1.06683 1.23664 1.40068 1.55691 1.704 1.84116 1.96803 2.0846 2.19109 2.28791 2.37557 2.45466 2.52579 2.58959 2.64669 2.6977 2.74318 2.78366 2.81967 2.85164 2.88 2.90515 2.92742 2.98817
@@ -530,6 +534,7 @@
 0.021 0.053 0.081 0.121 0.151 0.187
 0.032 0.053 0.091 0.116 0.139 0.168
 
+# Commercial Catch-at-Age (CAA); 10^6 number by species, year, age
 # CatchAtAge.mil.SDog 
 0 0 0 0 0 0 0 0 0 0 0 0 0.0686409 0.0450679 0.0842855 0.0751022 0.0669195 0.0596283 0.0531315 0.0473426 0.0421844 0.0375882 0.0334928 0.0298436 0.026592 0.0236947 0.021113 0.0188127 0.0167629 0.0149365 0.0133091
 0 0 0 0 0 0 0 0 0 0 0 0 0.0945507 0.0582121 0.109781 0.0923928 0.0823261 0.0733563 0.0653638 0.0582421 0.0518964 0.046242 0.0412037 0.0367144 0.0327142 0.0291498 0.0259738 0.0231438 0.0206222 0.0183753 0.0309626
@@ -818,6 +823,7 @@
 0 0 0 0 0 0
 0 0 0 0 0 0
 
+# Total annual survey catch; Necessary for years where age samples were not taken, by species, survey, year
 # TotFIC.SDog 
 27.8043 27.8604 25.3409 39.6571 37.661 41.1598 38.3633 46.1323 43.3505 43.4617 40.2247 37.4771 34.8388 31.7188 32.3489 28.0206 27.0889 23.5207 19.7941 17.5098 15.2256 13.051 11.2139 9.90214 12.2035 10.8889 11.0585 28.3304 32.7732 30.7133
 24.635 24.6071 22.3334 35.1711 33.3672 36.5146 34.02 41.0183 38.549 38.6576 35.7333 33.2472 30.6225 27.9786 28.1623 24.3441 23.6135 20.3299 16.8556 15.2422 13.1416 11.3005 9.78524 8.69169 10.7746 9.64881 9.77307 25.2593 29.2297 27.3553
@@ -854,6 +860,7 @@
 3.05122 7.43 6.22 2.19 0.603316 0.409726 2.85481 3.97702 34.3918 7.54315 14.7631 9.75526 9.2 22.83 36.3321 72.24 34.7663 89.9575 65.0637 57.251 51.69 86.9642 33.27 35.1353 28.1099 84.6576 47.8811 19.7595 27.1721 17.1653
 0.4411 0.03 0.0262 0.08 0.203 0.0925 1.0926 1.9354 0.9316 9.54 11.55 14.25 13.98 20.74 56.49 16.8 13.61 125.74 37.66 37.05 20.63 13.51 20.65 25.31 77.92 94.77 40.69 25.7 28.15 22.96
 
+# M1 (Natural mortality rate excluding predation) by species, age 
 # M1.SDog 
  0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 0.092 
 
@@ -881,6 +888,7 @@
 # M1.Her 
  0.1 0.1 0.1 0.1 0.1 0.1 
 
+# Age-specific consumption:biomass ratios by species, year, age
 # CBratio.SDog 
 1.35788032256483 1.14843707684797 0.80880771759105 0.838836005658825 0.782471103350795 0.634729054088957 0.674221406519582 0.710247350345046 0.631492980409872 0.571494174808372 0.589253065672541 0.505561949311699 0.789446130351551 0.721465600670136 0.309748044530745 0.638531720359038 0.710119311560333 0.733729045512776 0.697465901637339 1.06720203064295 0.977824700983973 0.858654928105337 0.727337044048565 0.603743741406896 0.72783584247598 0.72783584247598 0.8654162154004 0.701511905794378 0.701511905794378 0.701511905794378 0.67838430382543
 1.35788032256483 1.14843707684797 0.80880771759105 0.838836005658825 0.782471103350795 0.634729054088957 0.674221406519582 0.710247350345046 0.631492980409872 0.571494174808372 0.589253065672541 0.505561949311699 0.789446130351551 0.721465600670136 0.309748044530745 0.638531720359038 0.710119311560333 0.733729045512776 0.697465901637339 1.06720203064295 0.977824700983973 0.858654928105337 0.727337044048565 0.603743741406896 0.72783584247598 0.72783584247598 0.8654162154004 0.701511905794378 0.701511905794378 0.701511905794378 0.67838430382543
@@ -1169,6 +1177,7 @@
 2.14484621921829 1.65949913885598 1.55613139453257 1.09530012285347 1.05249256923029 1.05249256923029
 2.14484621921829 1.65949913885598 1.55613139453257 1.09530012285347 1.05249256923029 1.05249256923029
 
+# Fishery-Independent trawl survey Catch-at-age (FIC); number/tow by species, survey, year, age
 # FIC.SDog.1.Spring 
 0.0515366 3.1472 2.8043 2.49876 2.22651 1.98392 1.76776 1.57515 1.40353 1.25061 1.11435 0.992938 0.865071 0.775508 0.67799 0.60412 0.538298 0.479648 0.427388 0.380822 0.33933 0.302358 0.269415 0.240061 0.213905 0.190599 0.169833 0.151329 0.134841 0.120149 0.107058
 0.00726755 3.22159 2.87058 2.55782 2.27913 2.03081 1.80954 1.61238 1.43671 1.28017 1.14069 1.01641 0.87834 0.737631 0.652216 0.548913 0.489107 0.435816 0.388332 0.346021 0.308321 0.274728 0.244795 0.218123 0.194358 0.173182 0.154313 0.1375 0.122518 0.109169 0.183951
@@ -1745,6 +1754,7 @@
 0.02 0.75 11.06 8.74 4.24 3.34
 0.05 5.12 3.41 4.61 5.45 4.32
 
+# Food habits: Observed predator stomach contents, proportions by wt by nsp2?, survey, year, age)
 # FH.SpinyDogfish 
 0 0 0 0 0 0 0 0 0 1
 0 0 0 0 0 0 0 0 0 1
