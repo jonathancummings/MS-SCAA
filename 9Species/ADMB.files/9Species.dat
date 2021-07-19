@@ -98,6 +98,7 @@
 # M1yr 
  1978 
 
+# Likelihood weights
 # TCwt (Total annual commercial catch in weight by species)
  150 150 400 150 100 150 350 250 75 
 
@@ -1754,7 +1755,7 @@
 0.02 0.75 11.06 8.74 4.24 3.34
 0.05 5.12 3.41 4.61 5.45 4.32
 
-# Food habits: Observed predator stomach contents, proportions by wt by nsp2?, survey, year, age)
+# Food habits: Observed predator stomach contents, proportions by weight by species, survey, year, age)
 # FH.SpinyDogfish 
 0 0 0 0 0 0 0 0 0 1
 0 0 0 0 0 0 0 0 0 1
